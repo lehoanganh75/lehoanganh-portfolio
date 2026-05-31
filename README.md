@@ -6,7 +6,7 @@ The website introduces my personal profile, technical skills, projects, research
 
 ## Live Demo
 
-Website: `Coming soon`
+Website: http://lehoanganh.duckdns.org
 
 ## About Me
 
