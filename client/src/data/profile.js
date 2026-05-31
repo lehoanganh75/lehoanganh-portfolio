@@ -9,7 +9,11 @@ export const profileData = {
     hero: {
       headline: "I build backend systems and web applications.",
       highlight: "backend systems",
-      description: "Backend Developer specializing in Java and Spring Boot. I have hands-on experience designing scalable RESTful APIs, event-driven systems, and AI-powered platforms. Experienced in building production-ready systems with authentication, caching, monitoring, and containerization. Strong foundation in system design, database optimization, and real-time interaction.",
+      description: [
+        "Backend Developer specializing in Java and Spring Boot. I have hands-on experience designing scalable RESTful APIs, event-driven systems, and AI-powered platforms.",
+        "Beyond strong technical foundations, I prioritize complex problem-solving, continuous learning, and effective teamwork to build robust, production-ready systems.",
+        "Soft skills: Effective Communication & Teamwork, Continuous Learning, Analytical & Complex Problem-Solving, Leadership & Project Coordination."
+      ],
       buttons: {
         contact: "Get In Touch",
         cv: "Download CV"
@@ -53,7 +57,7 @@ export const profileData = {
           role: "Member",
           github: ["https://github.com/hamanhcuong18112004/project-management-system-frontend", "https://github.com/MACHNGOCXUAN/project-management-system-backend"],
           description: [
-            "Contributed to a workspace and task management application designed to track team progress.",
+            "Collaborated with cross-functional team members via Git/GitHub to develop a workspace and task management application designed to track team progress.",
             "Implemented RESTful APIs for board creation, task management, and workflow tracking.",
             "Secured API endpoints using JWT authentication.",
             "Integrated a robust database architecture to handle complex project data."
@@ -77,7 +81,7 @@ export const profileData = {
           company: "AI-powered Event Management System",
           role: "Project Leader",
           period: "4 months",
-          description: "Led a 2-member team to develop and deploy an event management platform with AI-powered features, QR attendance, statistics, realtime chat, notification, and role-based access control."
+          description: "Coordinated tasks, managed project timelines, and led a 2-member team to develop and deploy an event management platform with AI-powered features, QR attendance, statistics, realtime chat, notification, and role-based access control."
         },
         {
           company: "Scientific Research SSRC-I-2026",
@@ -113,7 +117,11 @@ export const profileData = {
     hero: {
       headline: "Tôi xây dựng hệ thống backend và ứng dụng web.",
       highlight: "hệ thống backend",
-      description: "Lập trình viên Backend chuyên môn về Java và Spring Boot. Tôi có kinh nghiệm thực tế trong việc thiết kế các RESTful API mở rộng, hệ thống hướng sự kiện và nền tảng tích hợp AI. Có khả năng xây dựng các hệ thống chuẩn production với các tính năng xác thực, bộ đệm (caching), giám sát (monitoring), và container hóa. Nền tảng vững chắc về thiết kế hệ thống, tối ưu hóa cơ sở dữ liệu và tương tác thời gian thực.",
+      description: [
+        "Lập trình viên Backend chuyên môn về Java và Spring Boot. Tôi có kinh nghiệm thực tế trong việc thiết kế các RESTful API mở rộng, hệ thống hướng sự kiện và nền tảng tích hợp AI.",
+        "Bên cạnh kỹ năng chuyên môn vững chắc, tôi luôn đề cao tư duy giải quyết vấn đề phức tạp, tinh thần tự học và khả năng phối hợp làm việc nhóm hiệu quả để xây dựng các hệ thống chuẩn production.",
+        "Kỹ năng mềm: Giao tiếp & Làm việc nhóm hiệu quả, Khả năng tự học nhanh, Tư duy phân tích - giải quyết vấn đề, và Kỹ năng lãnh đạo - điều phối dự án."
+      ],
       buttons: {
         contact: "Liên hệ",
         cv: "Tải CV"
@@ -157,7 +165,7 @@ export const profileData = {
           role: "Member",
           github: ["https://github.com/hamanhcuong18112004/project-management-system-frontend", "https://github.com/MACHNGOCXUAN/project-management-system-backend"],
           description: [
-            "Đóng góp xây dựng ứng dụng không gian làm việc và quản lý công việc để theo dõi tiến độ nhóm.",
+            "Phối hợp chặt chẽ với team qua Git/GitHub để xây dựng ứng dụng không gian làm việc và quản lý công việc để theo dõi tiến độ nhóm.",
             "Triển khai RESTful API cho việc tạo bảng (boards), quản lý nhiệm vụ và quy trình làm việc.",
             "Bảo mật các endpoint của API bằng xác thực JWT.",
             "Tích hợp kiến trúc cơ sở dữ liệu mạnh mẽ để xử lý dữ liệu dự án phức tạp."
@@ -181,7 +189,7 @@ export const profileData = {
           company: "Hệ thống quản lý sự kiện tích hợp AI",
           role: "Project Leader",
           period: "4 tháng",
-          description: "Dẫn dắt nhóm 2 thành viên phát triển và triển khai nền tảng quản lý sự kiện với các chức năng AI, QR điểm danh, thống kê, chat realtime, notification và phân quyền người dùng."
+          description: "Phân chia công việc, quản lý tiến độ và dẫn dắt nhóm 2 thành viên phát triển và triển khai nền tảng quản lý sự kiện với các chức năng AI, QR điểm danh, thống kê, chat realtime, notification và phân quyền người dùng."
         },
         {
           company: "Nghiên cứu khoa học SSRC-I-2026",

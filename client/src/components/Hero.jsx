@@ -42,9 +42,11 @@ const Hero = ({ lang }) => {
         </h1>
 
         {/* Description */}
-        <p className="text-brand-muted text-sm md:text-base leading-relaxed max-w-2xl mb-10">
-          {data.description}
-        </p>
+        <div className="text-brand-muted text-sm md:text-base leading-relaxed max-w-2xl mb-10 flex flex-col gap-4">
+          {Array.isArray(data.description) 
+            ? data.description.map((p, i) => <p key={i}>{p}</p>) 
+            : <p>{data.description}</p>}
+        </div>
 
         {/* Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-20">
