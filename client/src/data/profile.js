@@ -7,12 +7,12 @@ export const profileData = {
       contact: "Contact"
     },
     hero: {
-      headline: "I build backend systems and web applications.",
+      headline: "Architecting robust backend systems and modern web experiences.",
       highlight: "backend systems",
       description: [
-        "Backend Developer specializing in Java and Spring Boot. I have hands-on experience designing scalable RESTful APIs, event-driven systems, and AI-powered platforms.",
-        "Beyond strong technical foundations, I prioritize complex problem-solving, continuous learning, and effective teamwork to build robust, production-ready systems.",
-        "Soft skills: Effective Communication & Teamwork, Continuous Learning, Analytical & Complex Problem-Solving, Leadership & Project Coordination."
+        "I am a Software Developer dedicated to engineering resilient backend systems and dynamic web applications.",
+        "Specializing in the Java/Spring Boot ecosystem, I design scalable APIs, implement event-driven architectures, and build AI-enhanced platforms.",
+        "I thrive in collaborative agile environments, bringing a complex problem-solving mindset and a commitment to continuous learning to every phase of the software development lifecycle."
       ],
       buttons: {
         contact: "Get In Touch",
@@ -115,12 +115,12 @@ export const profileData = {
       contact: "Liên hệ"
     },
     hero: {
-      headline: "Tôi xây dựng hệ thống backend và ứng dụng web.",
+      headline: "Kiến trúc các hệ thống backend mạnh mẽ và trải nghiệm web hiện đại.",
       highlight: "hệ thống backend",
       description: [
-        "Lập trình viên Backend chuyên môn về Java và Spring Boot. Tôi có kinh nghiệm thực tế trong việc thiết kế các RESTful API mở rộng, hệ thống hướng sự kiện và nền tảng tích hợp AI.",
-        "Bên cạnh kỹ năng chuyên môn vững chắc, tôi luôn đề cao tư duy giải quyết vấn đề phức tạp, tinh thần tự học và khả năng phối hợp làm việc nhóm hiệu quả để xây dựng các hệ thống chuẩn production.",
-        "Kỹ năng mềm: Giao tiếp & Làm việc nhóm hiệu quả, Khả năng tự học nhanh, Tư duy phân tích - giải quyết vấn đề, và Kỹ năng lãnh đạo - điều phối dự án."
+        "Tôi là một Lập trình viên Phần mềm (Software Developer) đam mê xây dựng các hệ thống backend bền bỉ và ứng dụng web động.",
+        "Chuyên môn về hệ sinh thái Java/Spring Boot, tôi thiết kế các API linh hoạt, triển khai kiến trúc hướng sự kiện, và xây dựng các nền tảng tích hợp AI.",
+        "Tôi phát huy tối đa khả năng trong các môi trường làm việc nhóm (Agile), luôn mang theo tư duy giải quyết vấn đề phức tạp và tinh thần học hỏi không ngừng vào mọi giai đoạn của vòng đời phát triển phần mềm."
       ],
       buttons: {
         contact: "Liên hệ",
