@@ -222,7 +222,7 @@ export const personalInfo = {
   phone: "0328013079",
   email: "lehoanganh7524@gmail.com",
   github: "https://github.com/lehoanganh75",
-  linkedin: "https://www.linkedin.com/in/lehoanganh-undefined-789857412/",
+  linkedin: "https://www.linkedin.com/in/lehoanganh7524/?locale=vi",
   address: "District 12, Ho Chi Minh City, Vietnam",
   university: "Industrial University of Ho Chi Minh City - IUH",
   major: "Software Engineering",
