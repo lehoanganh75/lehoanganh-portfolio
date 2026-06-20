@@ -1,6 +1,6 @@
 import React from 'react';
 import { profileData } from '../data/profile';
-import cvFile from '../data/BE_LeHoangAnh_Intern _HCM.pdf';
+import cvFile from '../data/BE_LeHoangAnh_Intern_HCM.pdf';
 import { FaJava, FaNodeJs, FaReact, FaDocker, FaGithub } from 'react-icons/fa';
 import { SiSpringboot, SiMongodb, SiMysql, SiRedis, SiMariadb, SiTypescript, SiTailwindcss, SiKong } from 'react-icons/si';
 

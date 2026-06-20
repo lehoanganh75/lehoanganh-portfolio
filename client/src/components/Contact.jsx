@@ -27,7 +27,18 @@ const Contact = ({ lang }) => {
     setStatus({ submitting: true, success: false, error: false });
     
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/contact';
+      let apiUrl = import.meta.env.VITE_API_URL;
+      if (!apiUrl && typeof window !== 'undefined') {
+        const { hostname, protocol } = window.location;
+        if (hostname === 'localhost' || hostname === '127.0.0.1') {
+          apiUrl = 'http://localhost:5000/api/contact';
+        } else {
+          // Dynamically point to port 5000 on the same host in production
+          apiUrl = `${protocol}//${hostname}:5000/api/contact`;
+        }
+      }
+      apiUrl = apiUrl || 'http://localhost:5000/api/contact';
+
       const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
