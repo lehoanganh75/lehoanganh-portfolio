@@ -1,6 +1,6 @@
 import React from 'react';
 import { profileData } from '../data/profile';
-import cvFile from '../data/Le_Hoang_Anh_cv.pdf';
+import cvFile from '../data/BE_LeHoangAnh_Intern _HCM.pdf';
 import { FaJava, FaNodeJs, FaReact, FaDocker, FaGithub } from 'react-icons/fa';
 import { SiSpringboot, SiMongodb, SiMysql, SiRedis, SiMariadb, SiTypescript, SiTailwindcss, SiKong } from 'react-icons/si';
 
@@ -59,7 +59,7 @@ const Hero = ({ lang }) => {
           </a>
           <a
             href={cvFile}
-            download="Le_Hoang_Anh_cv.pdf"
+            download="BE_LeHoangAnh_Intern_HCM.pdf"
             className="px-8 py-3.5 bg-transparent border-2 border-white/20 text-white rounded-full font-bold hover:border-white/50 hover:bg-white/5 hover:scale-105 transition-all duration-300"
           >
             {data.buttons.cv}
