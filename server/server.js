@@ -53,12 +53,18 @@ app.post('/api/contact', async (req, res) => {
     };
 
     await transporter.sendMail(mailToOwner);
-    await transporter.sendMail(mailToSender);
+    
+    // Try to send the auto-reply, but don't fail the whole request if the user's email is invalid or has a typo
+    try {
+      await transporter.sendMail(mailToSender);
+    } catch (senderError) {
+      console.warn('Warning: Failed to send auto-reply to sender:', senderError.message);
+    }
     
     console.log(`Email successfully sent from ${name} (${email})`);
     return res.status(200).json({ success: true, message: 'Message sent successfully.' });
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('Error sending email to owner:', error);
     return res.status(500).json({ success: false, message: 'Failed to send message.' });
   }
 });
