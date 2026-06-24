@@ -33,8 +33,12 @@ const Contact = ({ lang }) => {
         if (hostname === 'localhost' || hostname === '127.0.0.1') {
           apiUrl = 'http://localhost:5000/api/contact';
         } else {
-          // Dynamically point to port 5000 on the same host in production
-          apiUrl = `${protocol}//${hostname}:5000/api/contact`;
+          // In production, if using HTTPS, Nginx will proxy /api/contact to port 5000
+          if (protocol === 'https:') {
+            apiUrl = `https://${hostname}/api/contact`;
+          } else {
+            apiUrl = `http://${hostname}:5000/api/contact`;
+          }
         }
       }
       apiUrl = apiUrl || 'http://localhost:5000/api/contact';

@@ -192,10 +192,22 @@ export const profileData = {
           description: "Phân chia công việc, quản lý tiến độ và dẫn dắt nhóm 2 thành viên phát triển và triển khai nền tảng quản lý sự kiện với các chức năng AI, QR điểm danh, thống kê, chat realtime, notification và phân quyền người dùng."
         },
         {
+          company: "Google for Education – Gemini Certified University Student",
+          role: "Sinh viên đạt chứng chỉ",
+          period: "Tháng 3 năm 2026",
+          description: "Chứng chỉ về việc áp dụng AI, cụ thể là Gemini, vào giảng dạy và học tập"
+        },
+        {
           company: "Nghiên cứu khoa học SSRC-I-2026",
           role: "Thành viên tham gia nghiên cứu",
           period: "2026",
           description: "Tham gia nghiên cứu khoa học liên quan đến hệ thống quản lý sự kiện, AI hỗ trợ lập kế hoạch, tương tác người tham gia và phân tích dữ liệu sau sự kiện."
+        },
+        {
+          company: "Google AI Professional Certificate",
+          role: "Sinh viên đạt chứng chỉ",
+          period: "Tháng 6 năm 2026",
+          description: "Chứng chỉ về việc áp dụng AI vào phát triển phần mềm"
         }
       ]
     },
@@ -222,7 +234,7 @@ export const personalInfo = {
   phone: "0328013079",
   email: "lehoanganh7524@gmail.com",
   github: "https://github.com/lehoanganh75",
-  linkedin: "https://www.linkedin.com/in/lehoanganh7524/?locale=vi",
+  linkedin: "https://www.linkedin.com/in/lehoanganh7524",
   address: "District 12, Ho Chi Minh City, Vietnam",
   university: "Industrial University of Ho Chi Minh City - IUH",
   major: "Software Engineering",
