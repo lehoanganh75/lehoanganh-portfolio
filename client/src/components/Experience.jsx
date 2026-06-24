@@ -3,16 +3,17 @@ import { profileData } from '../data/profile';
 
 const Experience = ({ lang }) => {
   const data = profileData[lang].experience;
+  const sortedItems = [...data.items].reverse();
 
   return (
-    <section id="experience" className="py-20 flex flex-col items-center">
+    <section id="experience" className="py-20 bg-brand-bg flex flex-col items-center">
       <div className="container mx-auto px-6 max-w-4xl">
         <h2 className="text-2xl md:text-3xl font-black text-[#a052ff] uppercase text-center mb-16 tracking-wider">
           {data.title}
         </h2>
 
         <div className="relative border-l border-[#333333] ml-4 md:ml-6 space-y-12">
-          {data.items.map((item, index) => (
+          {sortedItems.map((item, index) => (
             <div 
               key={index} 
               className="relative pl-8 md:pl-12 group hover:-translate-y-1 transition-transform duration-300"

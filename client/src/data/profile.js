@@ -92,7 +92,7 @@ export const profileData = {
         {
           company: "Scientific Research SSRC-I-2026",
           role: "Research Participant",
-          period: "2026",
+          period: "June 2026",
           description: "Participated in scientific research related to event management systems, AI-powered event planning, participant interaction, and post-event data analysis."
         },
         {
@@ -247,6 +247,8 @@ export const personalInfo = {
   email: "lehoanganh7524@gmail.com",
   github: "https://github.com/lehoanganh75",
   linkedin: "https://www.linkedin.com/in/lehoanganh7524",
+  facebook: "https://www.facebook.com/huangeng07/",
+  zalo: "https://zalo.me/0328013079",
   address: "District 12, Ho Chi Minh City, Vietnam",
   university: "Industrial University of Ho Chi Minh City - IUH",
   major: "Software Engineering",

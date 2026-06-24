@@ -50,21 +50,39 @@ const Projects = ({ lang }) => {
                   <div className="flex gap-2 shrink-0">
                     {project.github && (
                       Array.isArray(project.github) ? (
-                        project.github.map((link, i) => (
-                          <a key={i} href={link} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors" title={`GitHub Part ${i + 1}`}>
+                        project.github.map((link, i) => {
+                          const tooltipText = i === 0 ? 'Frontend' : 'Backend';
+                          return (
+                            <div key={i} className="relative group/tooltip">
+                              <a href={link} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors">
+                                <Github size={18} />
+                              </a>
+                              <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 text-xs font-bold text-white bg-black/90 border border-white/10 rounded-lg opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap shadow-xl z-20">
+                                {tooltipText}
+                              </span>
+                            </div>
+                          );
+                        })
+                      ) : (
+                        <div className="relative group/tooltip">
+                          <a href={project.github} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors">
                             <Github size={18} />
                           </a>
-                        ))
-                      ) : (
-                        <a href={project.github} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors" title="GitHub">
-                          <Github size={18} />
-                        </a>
+                          <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 text-xs font-bold text-white bg-black/90 border border-white/10 rounded-lg opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap shadow-xl z-20">
+                            GitHub
+                          </span>
+                        </div>
                       )
                     )}
                     {project.demo && (
-                      <a href={project.demo} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-[#ff6b6b]/10 flex items-center justify-center text-[#ff6b6b] hover:bg-[#ff6b6b] hover:text-white transition-colors" title="Live Demo">
-                        <ExternalLink size={18} />
-                      </a>
+                      <div className="relative group/tooltip">
+                        <a href={project.demo} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-[#ff6b6b]/10 flex items-center justify-center text-[#ff6b6b] hover:bg-[#ff6b6b] hover:text-white transition-colors">
+                          <ExternalLink size={18} />
+                        </a>
+                        <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 text-xs font-bold text-white bg-black/90 border border-white/10 rounded-lg opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap shadow-xl z-20">
+                          {lang === 'en' ? 'Live Demo' : 'Xem Demo'}
+                        </span>
+                      </div>
                     )}
                   </div>
                 </div>

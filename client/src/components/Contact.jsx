@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { profileData, personalInfo } from '../data/profile';
 import { Mail, Github } from 'lucide-react';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 const Contact = ({ lang }) => {
   const data = profileData[lang].contact;
@@ -86,11 +86,19 @@ const Contact = ({ lang }) => {
           </div>
 
           <div className="flex items-center gap-4 pt-6 text-brand-muted">
-            <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hover:text-white hover:scale-110 transition-all">
+            <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hover:text-white hover:scale-110 transition-all" title="GitHub">
               <Github size={20} />
             </a>
-            <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="hover:text-white hover:scale-110 transition-all">
+            <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="hover:text-white hover:scale-110 transition-all" title="LinkedIn">
               <FaLinkedin size={20} />
+            </a>
+            <a href={personalInfo.facebook} target="_blank" rel="noreferrer" className="hover:text-white hover:scale-110 transition-all" title="Facebook">
+              <FaFacebook size={20} />
+            </a>
+            <a href={personalInfo.zalo} target="_blank" rel="noreferrer" className="hover:text-white hover:scale-110 transition-all" title="Zalo">
+              <svg viewBox="0 0 24 24" className="w-[20px] h-[20px] fill-current" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 5.92 2 10.78c0 2.87 1.63 5.4 4.15 6.94l-.84 2.94c-.11.39.29.73.66.54l3.43-1.74c.83.19 1.7.3 2.6.3 5.52 0 10-3.92 10-8.78S17.52 2 12 2zm1.65 11.23H9.86v-.88h2.09c.39 0 .54-.25.2-.6l-2-2.05c-.34-.34-.53-.82-.53-1.38v-1.15c0-.26.22-.48.48-.48h3.33v.89H11.4c-.39 0-.54.25-.2.6l2 2.05c.34.34.53.82.53 1.38v1.08c0 .26-.22.48-.48.48z"/>
+              </svg>
             </a>
           </div>
         </div>
