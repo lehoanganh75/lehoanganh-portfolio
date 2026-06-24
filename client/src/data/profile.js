@@ -15,7 +15,7 @@ export const profileData = {
         "I thrive in collaborative agile environments, bringing a complex problem-solving mindset and a commitment to continuous learning to every phase of the software development lifecycle."
       ],
       buttons: {
-        contact: "Get In Touch",
+        contact: "Get In Contact",
         cv: "Download CV"
       }
     },
@@ -84,10 +84,22 @@ export const profileData = {
           description: "Coordinated tasks, managed project timelines, and led a 2-member team to develop and deploy an event management platform with AI-powered features, QR attendance, statistics, realtime chat, notification, and role-based access control."
         },
         {
+          company: "Google for Education – Gemini Certified University Student",
+          role: "Certified Student",
+          period: "March 2026",
+          description: "Certification for applying AI, specifically Gemini, in teaching and learning."
+        },
+        {
           company: "Scientific Research SSRC-I-2026",
           role: "Research Participant",
           period: "2026",
           description: "Participated in scientific research related to event management systems, AI-powered event planning, participant interaction, and post-event data analysis."
+        },
+        {
+          company: "Google AI Professional Certificate",
+          role: "Certified Student",
+          period: "June 2026",
+          description: "Certification for applying AI to software development."
         }
       ]
     },
